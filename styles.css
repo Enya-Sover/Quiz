@@ -1,0 +1,159 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+.main-div {
+  height: 75vh;
+  width: auto;
+  background-image: url("Quiz.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 4rem;
+}
+
+#start-container {
+  width: auto;
+  height: auto;
+  max-height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0;
+}
+#question-container{
+  width: auto;
+  height: auto;
+  max-height: 65vh;
+  max-width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0;
+}
+
+.category {
+  background-color: rgba(239, 201, 105, 0.9);
+  border-radius: 1.3rem;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.7em;
+  width: 100%;
+  max-height: 50vh;
+  
+}
+
+.categoryBox {
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  max-width: 25em;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.title {
+  background-color: rgba(239, 201, 105, 0.9);
+  border-radius: 1.3rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0.2, 0.3);
+  padding: 1vh 5vh;
+  max-width: 60vw;
+  font-size: 2em;
+  flex-wrap: wrap ;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.section {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.alternativ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1.3rem;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  width: 100%;
+  gap: 0.1em;
+}
+
+.alternativ div {
+  background-color: rgba(239, 201, 105, 0.9);
+  border-radius: 1.3rem;
+  text-align: center;
+  padding: 8px;
+  width: 100%;
+}
+#restart-button{
+background-color: blue;
+color: white;
+}
+
+#question {
+  background-color: rgba(239, 201, 105, 0.9);
+  border-radius: 1.3rem;
+  text-align: center;
+  padding: 8px;
+  font-size: 1.2rem;
+  width: 95%;
+  margin-bottom: 0rem;
+}
+
+#start-button {
+  background-color: rgb(0, 255, 38);
+
+}
+@media screen and (max-width: 600px){
+  .main-div{
+  height: 50vh;
+    margin: 0;
+    margin-top: 5em;
+
+
+  }
+  .inside-container{
+    height: 10vh;
+    width: auto;
+    font-size: 1.2em;
+  }  
+  .title{
+    font-size: 0.9em;
+  }
+  .categoryBox{
+    margin:0;
+    height: 25vh;
+    width: 100%;
+    padding: 0;
+
+  }
+  .category{
+    font-size: 0.8em;
+    padding: 1em;
+    width: 100%;
+  }
+  .alternativ{
+    font-size: 1em;
+  }
+}

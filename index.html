@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Davids quiz</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
+    <div class="main-div">
+        <div id="start-container" class="inside-container">
+            <header>
+                <h2 class="title">Welcome to my quiz</h2>
+            </header>
+            <nav class="categoryBox">
+                <p id="category" class="category">Choose category:</p>
+                <section class="section">
+                    <div id="first-category" class="category">Music</div>
+                    <div id="second-category" class="category">Television</div>
+                    <button id="start-button" class="category">Start game</button>
+                </section>
 
-    <div class="container">
-        <div id="nameDiv" class="name">
-            <h2>Enter your name</h2>
-            <input id="name" type="text" required>
-            <input id="nameSubmit" type="submit" value="Submit">
-        </div>
-        <div id="chat-container" class="chat-content">
-            <div class="lower">
-                <form action="" class="form">
-                    <textarea name="message" id="message"></textarea>
-                    <button id="send" class="submit">Send</button>
-                </form>
-            </div>
-            <!-- Här Landar Vår Div Som Vi Appendat --> 
+            </nav>
+
         </div>
 
+        <div id="question-container" class="inside-container">
+            <header>
+                <h2 id="question" class="title">Which of the following alternatives will you choose?</h2>
+            </header>
+            <nav class="categoryBox">
+                <div class="alternativ">
+                    <div class="question" id="first-question">Fråga 1</div>
+                    <div class="question" id="second-question">Fråga 2</div>
+                    <div class="question" id="third-question"> Fråga 3</div>
+                    <div class="question" id="fourth-question"> Fråga 4</div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="result-container" class="categoryBox">
+            <header>
+                <h2 class="title">Results</h2>
+            </header>
+            <p id="score" class="category">textContent</p>
+            <p id="timer" class="category">textContent</p>
+            <p id="restart-button" class="category">Restart quiz</p>
+        </div>
     </div>
 
 </body>
+
 </html>
